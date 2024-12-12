@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "scripts": {
+    "start:frontend": "cd BookBank_frontend && npm start",
+    "start:backend": "cd BookBank_backend && npm run dev",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "node": "^22.12.0"
+  }
+}
